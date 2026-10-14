@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>711·七遇西亚斯 — 西亚斯校园狮子IP盲盒文创 · AIGC创意传播赛道</title>
+<meta name="description" content="《711·七遇西亚斯》是郑州西亚斯学院学生团队基于 AIGC 人机协同打造的校园狮子 IP 盲盒文创系列，7 款角色、7 种学科身份、同一种西亚斯归属。参赛赛道：2026“智创校园”AI应用创新大赛 · AIGC 创意传播赛道。">
+<meta property="og:title" content="711·七遇西亚斯 — 西亚斯校园狮子IP盲盒文创">
+<meta property="og:description" content="7 款角色 · 7 种学科身份 · 同一种西亚斯归属。AIGC 人机协同创作的校园狮子 IP 盲盒系列。">
+<!-- 部署到 GitHub Pages 后，可将 og:image 改为 https://你的用户名.github.io/仓库名/assets/poster-1.jpg -->
+<meta property="og:image" content="assets/poster-1.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C3731'/%3E%3Ctext x='32' y='42' font-size='26' font-weight='900' text-anchor='middle' fill='%23D9A441' font-family='Arial, sans-serif'%3E711%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   711·七遇西亚斯 — 校园狮子IP盲盒文创作品展示站
+   视觉方向：潮玩盲盒 × 校园青春 × 莫兰迪低饱和 + 珐琅金属金
+   ============================================================ */
+:root{
+  --paper:#F7F2E9;          /* 暖纸白画布 */
+  --paper-2:#EFE8D9;        /* 略深纸色 */
+  --ink:#2C3731;            /* 深墨绿（文本主色） */
+  --ink-soft:#5C6A62;       /* 次级文本 */
+  --line:rgba(44,55,49,.16);
+  --gold:#B07B2A;           /* 珐琅铜金 */
+  --gold-bright:#D9A441;    /* 明金点缀 */
+  --teal:#4E7A6E;           /* 莫兰迪青 */
+  --rose:#C0877F;           /* 莫兰迪粉 */
+  --blue:#687FA3;           /* 莫兰迪蓝 */
+  --slate:#7C8894;          /* 灰蓝 */
+  --deep:#26312B;           /* 深色区块底色 */
+  --radius:18px;
+  --shadow:0 18px 40px rgba(44,55,49,.14);
+  --serif:Georgia,"Songti SC","SimSun",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--gold-bright);color:var(--deep)}
+:focus-visible{outline:3px solid var(--gold-bright);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+@media(max-width:640px){.wrap{padding:0 18px}}
+
+/* 辅助通用 */
+.section-head{margin-bottom:40px}
+.section-kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--gold);
+}
+.section-kicker::before{content:"";width:26px;height:2px;background:var(--gold-bright)}
+.section-title{font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:.02em;margin-top:8px;line-height:1.25}
+.section-sub{color:var(--ink-soft);max-width:640px;margin-top:10px;font-size:15px}
+
+/* ===== 顶部导航 ===== */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(247,242,233,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:17px;letter-spacing:.02em;min-height:44px}
+.brand-mark{
+  width:34px;height:34px;border-radius:10px;background:var(--deep);color:var(--gold-bright);
+  display:grid;place-items:center;font-size:13px;font-weight:900;flex:none;
+}
+.brand small{display:block;font-size:10px;font-weight:500;color:var(--ink-soft);letter-spacing:.14em;margin-top:-2px}
+.nav-links{margin-left:auto;display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink-soft);padding:6px 2px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-links a:hover{color:var(--ink);border-color:var(--gold)}
+.nav-track{
+  font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--paper);
+  background:var(--gold);padding:6px 12px;border-radius:999px;flex:none;white-space:nowrap;
+}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ===== Hero 首屏 ===== */
+.hero{position:relative;overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:72px 28px 96px;max-width:1180px;margin:0 auto}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;padding:44px 18px 64px;gap:36px}}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--gold);
+  border:1px solid rgba(176,123,42,.4);background:rgba(217,164,65,.1);
+  padding:8px 14px;border-radius:999px;
+}
+.hero-title{
+  font-size:clamp(46px,7.6vw,88px);font-weight:900;line-height:1.08;letter-spacing:.01em;
+  margin:22px 0 6px;
+}
+.hero-title .dot{color:var(--gold-bright)}
+.hero-subtitle{font-size:15px;color:var(--ink-soft);max-width:560px;margin:10px 0 22px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.hero-chips span{
+  font-size:13px;font-weight:500;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:#fff;
+}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:15px;font-weight:700;padding:13px 24px;border-radius:999px;border:none;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn-primary{background:var(--deep);color:var(--paper)}
+.btn-primary:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 10px 22px rgba(176,123,42,.3)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;flex:none}
+/* 右侧海报卡组 */
+.hero-visual{position:relative;display:flex;justify-content:center}
+.poster-stack{position:relative;width:min(400px,86%);}
+.poster-stack::before{content:"";position:absolute;inset:0;border-radius:var(--radius);background:var(--gold);opacity:.55;transform:rotate(5.5deg);z-index:0}
+.poster-stack .frame{
+  position:relative;z-index:1;background:#fff;border-radius:var(--radius);
+  padding:12px;box-shadow:var(--shadow);
+  transform:rotate(-2deg);
+}
+.poster-stack img{border-radius:calc(var(--radius) - 6px);width:100%}
+.poster-stack .back-card{
+  position:absolute;z-index:0;right:-34px;bottom:-30px;width:52%;
+  background:#fff;border-radius:14px;padding:9px;box-shadow:var(--shadow);
+  transform:rotate(4deg);
+}
+.poster-stack .back-card img{border-radius:9px}
+.sticker{
+  position:absolute;z-index:3;font-size:12px;font-weight:900;letter-spacing:.08em;
+  padding:8px 14px;border-radius:999px;color:var(--paper);
+}
+.sticker.limit{top:-14px;left:-20px;background:var(--gold);transform:rotate(-8deg)}
+.sticker.hidden{right:-16px;bottom:22%;background:var(--deep);border:2px solid var(--gold-bright);transform:rotate(6deg)}
+@media(max-width:900px){
+  .sticker.limit{left:4px}
+  .sticker.hidden{right:6px}
+  .poster-stack .back-card{display:none}
+}
+/* hero 数据条 */
+.hero-stats{
+  border-top:1px solid var(--line);margin-top:26px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+}
+.hero-stats .stat{padding:22px 8px 0;border-right:1px solid var(--line)}
+.hero-stats .stat:first-child{padding-left:0}
+.hero-stats .stat:last-child{border-right:none}
+.hero-stats b{font-size:clamp(30px,4.5vw,46px);font-weight:900;color:var(--gold);line-height:1;display:block}
+.hero-stats em{font-style:normal;font-size:13px;color:var(--ink-soft)}
+@media(max-width:640px){.hero-stats{grid-template-columns:1fr 1fr;row-gap:14px}.hero-stats .stat{padding:12px 6px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.hero-stats .stat:nth-child(even){border-right:none}}
+
+/* ===== 跑马灯 ===== */
+.marquee{
+  background:var(--deep);color:var(--paper);
+  overflow:hidden;padding:15px 0;border-top:1px solid var(--gold-bright);
+}
+.marquee-track{display:flex;width:max-content;animation:marq 26s linear infinite}
+.marquee-track span{
+  font-size:14px;font-weight:700;letter-spacing:.22em;white-space:nowrap;
+  padding:0 28px;color:var(--paper);
+}
+.marquee-track i{font-style:normal;color:var(--gold-bright)}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ===== 视频区 ===== */
+.section{padding:84px 0;scroll-margin-top:64px}
+.video-frame{
+  position:relative;background:#151A17;border-radius:calc(var(--radius) + 4px);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.video-frame video{width:100%;aspect-ratio:836/480;display:block;background:#151A17}
+.video-meta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:16px;font-size:13px;color:var(--ink-soft)}
+.video-meta .tag{background:var(--paper-2);border:1px solid var(--line);padding:4px 12px;border-radius:999px;font-weight:500}
+
+/* ===== 海报作品 ===== */
+.poster-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:760px){.poster-grid{grid-template-columns:1fr}}
+.poster-card{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px;cursor:zoom-in;transition:transform .2s,box-shadow .2s,background .2s;
+}
+.poster-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.poster-card:active{transform:scale(.985)}
+.poster-card .p-img{overflow:hidden;border-radius:calc(var(--radius) - 6px);background:var(--paper-2);aspect-ratio:5/7}
+.poster-card img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .45s}
+.poster-card:hover img{transform:scale(1.035)}
+.poster-card h3{margin-top:14px;font-size:19px;font-weight:900;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.poster-card h3 small{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.12em;white-space:nowrap}
+.poster-card>p{font-size:14px;color:var(--ink-soft);margin-top:6px}
+.poster-card .p-num{position:absolute;top:24px;left:24px;background:var(--deep);color:var(--gold-bright);font-weight:900;font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:.1em}
+.poster-card .p-hint{font-size:12px;color:var(--ink-soft);opacity:.75;margin-top:8px;display:flex;align-items:center;gap:6px}
+
+/* ===== 灯箱 ===== */
+.lightbox{
+  position:fixed;inset:0;z-index:100;background:rgba(21,26,23,.93);
+  display:none;align-items:center;justify-content:center;flex-direction:column;
+  padding:44px 60px;
+}
+.lightbox.open{display:flex}
+.lb-img{display:none;max-width:min(880px,100%);max-height:74vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.55);background:#fff}
+.lb-img.active{display:block}
+.lb-cap{margin-top:18px;color:var(--paper);font-size:14.5px;font-weight:500;text-align:center}
+.lb-count{color:rgba(247,242,233,.55);font-size:12px;margin-top:5px;letter-spacing:.12em}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid rgba(247,242,233,.2);background:rgba(247,242,233,.1);color:var(--paper);font-size:20px;display:grid;place-items:center;transition:background .2s;z-index:2}
+.lb-btn:hover{background:var(--gold)}
+.lb-prev{left:22px}
+.lb-next{right:22px}
+.lb-close{position:absolute;top:20px;right:24px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(247,242,233,.2);background:rgba(247,242,233,.1);color:var(--paper);font-size:17px;display:grid;place-items:center;transition:background .2s}
+.lb-close:hover{background:var(--gold)}
+@media(max-width:640px){.lightbox{padding:40px 14px}.lb-btn{width:38px;height:38px;font-size:16px}.lb-prev{left:6px}.lb-next{right:6px}.lb-close{top:10px;right:12px;width:38px;height:38px}}
+
+/* ===== 角色阵容 ===== */
+.char-intro{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px;margin-bottom:24px;font-size:14px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.char-intro b{color:var(--gold)}
+@media(max-width:640px){.char-intro{flex-direction:column;align-items:flex-start;gap:4px}}
+.char-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.char-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.char-grid{grid-template-columns:1fr}}
+.char-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;position:relative;overflow:hidden;
+}
+.char-card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--cc)}
+.char-top{display:flex;align-items:center;gap:14px}
+.char-avatar{width:54px;height:54px;border-radius:16px;background:var(--cc);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:900;flex:none;box-shadow:inset 0 -3px 0 rgba(0,0,0,.14)}
+.char-card h3{font-size:20px;font-weight:900;display:flex;align-items:baseline;gap:8px}
+.char-card h3 small{font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:.1em}
+.char-tag{font-size:12px;font-weight:700;color:var(--cc);border:1px solid var(--cc);border-radius:999px;padding:2px 11px;display:inline-block;margin:10px 0 8px;letter-spacing:.06em}
+.char-line{font-size:14px;color:var(--ink-soft)}
+.char-card.hidden-card{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;background:var(--deep);color:var(--paper);border-color:var(--deep)}
+.char-card.hidden-card::before{background:var(--gold-bright)}
+.char-card.hidden-card .char-avatar{background:rgba(217,164,65,.18);color:var(--gold-bright);font-size:26px}
+.char-card.hidden-card h3 small{color:rgba(247,242,233,.55)}
+.char-card.hidden-card .char-tag{color:var(--gold-bright);border-color:rgba(217,164,65,.55)}
+.char-card.hidden-card .char-line{color:rgba(247,242,233,.82)}
+.hidden-ribbon{background:var(--gold-bright);color:var(--deep);font-size:12px;font-weight:900;letter-spacing:.16em;padding:9px 16px;border-radius:999px;white-space:nowrap}
+@media(max-width:640px){.char-card.hidden-card{grid-template-columns:1fr;gap:12px;text-align:left}.hidden-ribbon{justify-self:start}}
+
+/* ===== 创作理念 ===== */
+.concept-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start}
+@media(max-width:900px){.concept-grid{grid-template-columns:1fr}}
+.concept-block{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin-bottom:26px}
+.concept-block:last-child{margin-bottom:0}
+.concept-block h3{font-size:19px;font-weight:900;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.concept-block h3 .ico{width:30px;height:30px;border-radius:9px;background:var(--paper-2);display:grid;place-items:center;flex:none;color:var(--gold)}
+.concept-block p{font-size:14.5px;color:var(--ink-soft)}
+.pain-list{list-style:none;margin-top:16px;display:grid;gap:10px}
+.pain-list li{font-size:13.5px;color:var(--ink-soft);padding-left:22px;position:relative}
+.pain-list li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;border-radius:3px;background:var(--gold)}
+.num-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+@media(max-width:640px){.num-row{grid-template-columns:1fr}}
+.num-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-align:center}
+.num-card b{font-size:clamp(46px,7vw,76px);font-weight:900;color:var(--gold);line-height:1;display:block;font-family:var(--serif)}
+.num-card .n-tag{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--gold);margin-top:6px;display:block}
+.num-card p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;text-align:left}
+.craft-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.craft-chips span{font-size:13px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--paper)}
+.swatches{display:flex;margin-top:22px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.swatches .sw{flex:1;height:66px;position:relative}
+.swatches .sw small{position:absolute;left:0;right:0;bottom:5px;text-align:center;font-size:10px;font-weight:700;color:rgba(255,255,255,.95);text-shadow:0 1px 4px rgba(0,0,0,.55);letter-spacing:.06em}
+
+/* ===== 人机协同工作流 ===== */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
+@media(max-width:900px){.flow{grid-template-columns:1fr;gap:30px}}
+.flow-step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;position:relative}
+.flow-step .step-no{font-size:13px;font-weight:900;color:var(--gold);letter-spacing:.12em}
+.flow-step h4{font-size:17px;font-weight:900;margin:8px 0 8px}
+.flow-step p{font-size:13.5px;color:var(--ink-soft)}
+.flow-step::after{content:"→";position:absolute;top:50%;right:-20px;transform:translateY(-50%);color:var(--gold-bright);font-size:18px;font-weight:900;z-index:2}
+.flow-step:last-child::after{display:none}
+@media(max-width:900px){
+  .flow-step::after{content:"↓";right:auto;bottom:-26px;top:auto;transform:none;left:50%;font-size:16px}
+  .flow-step:last-child::after{display:none}
+}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+@media(max-width:900px){.tools{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.tools{grid-template-columns:1fr}}
+.tool{background:var(--deep);color:var(--paper);border-radius:var(--radius);padding:20px;border-top:3px solid var(--gold-bright)}
+.tool b{font-size:17px;font-weight:900;color:var(--gold-bright)}
+.tool span{display:block;font-size:12.5px;color:rgba(247,242,233,.72);margin-top:6px;line-height:1.6}
+.innovation{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.innovation span{font-size:13px;font-weight:500;border:1px dashed var(--gold);color:var(--gold);border-radius:999px;padding:6px 15px;background:rgba(217,164,65,.07)}
+
+/* ===== 创作团队 ===== */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.team-grid{grid-template-columns:1fr}}
+.member{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;text-align:center}
+.member .m-avatar{width:64px;height:64px;border-radius:50%;background:var(--paper-2);border:2px solid var(--gold-bright);display:grid;place-items:center;margin:0 auto 14px;font-size:24px;font-weight:900;color:var(--gold)}
+.member h3{font-size:18px;font-weight:900}
+.member .m-role{font-size:12px;font-weight:700;color:var(--gold);margin-top:4px;letter-spacing:.1em}
+.member p{font-size:13px;color:var(--ink-soft);margin-top:8px;line-height:1.7}
+.advisor{border-radius:var(--radius);background:var(--deep);color:var(--paper);padding:22px 28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:20px;border-left:6px solid var(--gold-bright)}
+.advisor .a-name{font-size:17px;font-weight:900;color:var(--gold-bright)}
+.advisor .a-meta{font-size:13.5px;color:rgba(247,242,233,.78)}
+
+/* ===== 页脚 ===== */
+footer{background:var(--deep);color:rgba(247,242,233,.82);padding:48px 0 34px}
+.footer-top{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;justify-content:space-between}
+.footer-brand{font-weight:900;color:var(--paper);font-size:19px}
+.footer-brand span{color:var(--gold-bright)}
+.footer-meta{font-size:13px;line-height:2.1}
+.footer-meta b{color:var(--paper);font-weight:700}
+.footer-bottom{border-top:1px solid rgba(247,242,233,.14);margin-top:28px;padding-top:18px;font-size:12.5px;color:rgba(247,242,233,.55);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.to-top{
+  position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:none;
+  background:var(--deep);color:var(--gold-bright);font-size:17px;display:grid;place-items:center;
+  box-shadow:var(--shadow);z-index:50;opacity:0;pointer-events:none;transition:opacity .25s,background .2s;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{background:var(--gold);color:var(--deep)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-track{animation:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">711</span>
+      <span>七遇西亚斯<small>AIGC 校园文创</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#video">主题视频</a>
+      <a href="#posters">海报作品</a>
+      <a href="#characters">角色阵容</a>
+      <a href="#concept">创作理念</a>
+      <a href="#team">创作团队</a>
+    </nav>
+    <span class="nav-track">AIGC 创意传播赛道</span>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-kicker">2026“智创校园”AI 应用创新大赛 · 郑州西亚斯学院</div>
+      <h1 class="hero-title">711<span class="dot">·</span>七遇西亚斯</h1>
+      <p class="hero-subtitle">西亚斯校园狮子 IP 盲盒文创系列——以校训精神为内核，AIGC 人机协同打造 7 款角色、7 种学科身份、同一种西亚斯归属。让校园文化变得可收藏、可视化、年轻化。</p>
+      <div class="hero-chips">
+        <span>盲盒潮玩</span><span>校园 IP</span><span>AIGC 人机协同</span><span>莫兰迪配色</span><span>哑光搪胶工艺</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#video">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>播放主题视频
+        </a>
+        <a class="btn btn-ghost" href="#posters">浏览海报作品</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>7</b><em>款系列角色</em></div>
+        <div class="stat"><b>6</b><em>大学科身份</em></div>
+        <div class="stat"><b>1</b><em>个隐藏款 YoYo</em></div>
+        <div class="stat"><b>1</b><em>个西亚斯校园</em></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="poster-stack">
+        <span class="sticker limit">限量首发</span>
+        <div class="frame">
+          <img src="assets/poster-1.jpg" alt="《七遇西亚斯》盲盒系列宣传海报：7 位狮子 IP 角色、身份卡与周边延展" loading="eager">
+        </div>
+        <div class="back-card">
+          <img src="assets/poster-2.jpg" alt="《SIAS 智创校园》设计展示海报缩略" loading="lazy">
+        </div>
+        <span class="sticker hidden">隐藏款 YoYo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 跑马灯 ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>校园青春 <i>·</i> 律动全城 <i>·</i> 限量首发 <i>·</i> 兼容中西 <i>·</i> 知行合一 <i>·</i> AIGC 人机协同 <i>·</i> 盲盒文创 <i>·</i></span>
+    <span>校园青春 <i>·</i> 律动全城 <i>·</i> 限量首发 <i>·</i> 兼容中西 <i>·</i> 知行合一 <i>·</i> AIGC 人机协同 <i>·</i> 盲盒文创 <i>·</i></span>
+  </div>
+</div>
+
+<!-- ===== 01 主题视频 ===== -->
+<section class="section" id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">01 / 作品展示</span>
+      <h2 class="section-title">主题视频</h2>
+      <p class="section-sub">IP 主题展示视频，动态演绎 7 位角色的校园故事与文创场景，融入新郑本土人文元素。</p>
+    </div>
+    <div class="video-frame">
+      <video controls preload="none" poster="assets/video-poster.jpg" aria-label="《711·七遇西亚斯》IP 主题展示视频">
+        <source src="assets/video.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请下载后观看。
+      </video>
+    </div>
+    <div class="video-meta">
+      <span class="tag">横版 836×480</span>
+      <span class="tag">时长约 3 分 13 秒</span>
+      <span class="tag">文件约 30 MB，点击播放后加载</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 海报作品 ===== -->
+<section class="section" id="posters">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">02 / 视觉设计</span>
+      <h2 class="section-title">海报作品</h2>
+      <p class="section-sub">两张海报构成作品的完整视觉体系：一张面向传播的系列宣传主视觉，一张面向评审的完整设计说明。点击卡片可放大查看。</p>
+    </div>
+    <div class="poster-grid">
+      <figure class="poster-card" data-lb="0">
+        <span class="p-num">POSTER 01</span>
+        <div class="p-img"><img src="assets/poster-1.jpg" alt="《七遇西亚斯》盲盒系列宣传海报：7 位角色、身份卡、周边延伸与盲盒包装" loading="lazy"></div>
+        <figcaption>
+          <h3>宣传海报《七遇西亚斯》 <small>系列主视觉</small></h3>
+          <p>7 位狮子 IP 角色一字排开，配套身份卡、周边延伸、动作延展、场景应用与盲盒包装展示，突出「校园青春 · 律动全城 · 限量首发」。</p>
+          <span class="p-hint">点击放大查看</span>
+        </figcaption>
+      </figure>
+      <figure class="poster-card" data-lb="1">
+        <span class="p-num">POSTER 02</span>
+        <div class="p-img"><img src="assets/poster-2.jpg" alt="《SIAS 智创校园》设计展示海报：IP 人物介绍、设计说明、灵感来源与 AI 应用说明" loading="lazy"></div>
+        <figcaption>
+          <h3>展示海报《SIAS 智创校园》 <small>设计说明书</small></h3>
+          <p>IP 人物介绍、设计说明、灵感来源、AI 应用说明与配色色卡一页集成，完整呈现从校训精神到 7 款角色的设计推导。</p>
+          <span class="p-hint">点击放大查看</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 角色阵容 ===== -->
+<section class="section" id="characters" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">03 / 盲盒全家福</span>
+      <h2 class="section-title">角色阵容</h2>
+      <p class="section-sub">全套 7 款 IP 统一狮子造型与哑光搪胶质感，以服饰与道具差异化呈现各专业特质，1 款隐藏款等你遇见。</p>
+    </div>
+    <div class="char-intro">
+      <span>系列结构：<b>文 · 理 · 体 · 音 · 美 · 医</b> 6 款学科角色 + 1 款留学生隐藏款 YoYo</span>
+      <span>统一校服造型，专业道具区分身份 · 低饱和莫兰迪配色</span>
+    </div>
+    <div class="char-grid">
+      <article class="char-card" style="--cc:var(--rose)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">西</div>
+          <h3>西西 <small>XIXI</small></h3>
+        </div>
+        <span class="char-tag">音乐生</span>
+        <p class="char-line">怀抱吉他的元气少女，用旋律书写校园青春。</p>
+      </article>
+      <article class="char-card" style="--cc:var(--teal)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">亚</div>
+          <h3>亚亚 <small>YAYA</small></h3>
+        </div>
+        <span class="char-tag">医学生</span>
+        <p class="char-line">白大褂下的严谨与温柔，守护校园健康。</p>
+      </article>
+      <article class="char-card" style="--cc:var(--blue)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">诗</div>
+          <h3>诗诗 <small>SHISHI</small></h3>
+        </div>
+        <span class="char-tag">文科生</span>
+        <p class="char-line">书页间的诗与远方，温润而有力量。</p>
+      </article>
+      <article class="char-card" style="--cc:var(--gold)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">环</div>
+          <h3>环环 <small>HUANHUAN</small></h3>
+        </div>
+        <span class="char-tag">美术生</span>
+        <p class="char-line">一顶贝雷帽，画笔下的校园色彩大师。</p>
+      </article>
+      <article class="char-card" style="--cc:#C07A45">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">迎</div>
+          <h3>迎迎 <small>YINGYING</small></h3>
+        </div>
+        <span class="char-tag">体育生</span>
+        <p class="char-line">阳光下的追风少年，运动场的活力担当。</p>
+      </article>
+      <article class="char-card" style="--cc:var(--slate)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">尼</div>
+          <h3>尼尼 <small>NINI</small></h3>
+        </div>
+        <span class="char-tag">理科生</span>
+        <p class="char-line">眼镜后的逻辑宇宙，用公式探索真理。</p>
+      </article>
+      <article class="char-card hidden-card" style="--cc:var(--gold-bright)">
+        <div class="char-top">
+          <div class="char-avatar" aria-hidden="true">Yo</div>
+          <div>
+            <h3>YoYo <small>YOYO · 留学生</small></h3>
+            <span class="char-tag">隐藏款 HIDDEN</span>
+            <p class="char-line">跨洋而来的神秘访客，在西亚斯解锁无限可能。西亚斯，欢迎你。</p>
+          </div>
+        </div>
+        <span class="hidden-ribbon">隐藏款 YoYo</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 创作理念 ===== -->
+<section class="section" id="concept">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">04 / 设计推导</span>
+      <h2 class="section-title">创作理念</h2>
+      <p class="section-sub">从校训精神出发，把抽象的校园文化转译为可收藏、可传播的潮玩视觉语言。</p>
+    </div>
+    <div class="concept-grid">
+      <div>
+        <div class="concept-block">
+          <h3><span class="ico" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          </span>灵感来源</h3>
+          <p>项目灵感源自郑州西亚斯学院「<b style="color:var(--ink)">兼容中西、知行合一</b>」的校训精神——海纳百川的胸襟与躬行求索的态度，是各专业学子逐梦成长的共同底色。以狮子为 IP 原型，结合「711·七遇西亚斯」理念，用盲盒承载 7 种学科身份，让学子在角色中看见自我、共情青年内心，强化身份认同与校园归属感。</p>
+          <ul class="pain-list">
+            <li>校园文创供给错位：现有文创多聚焦建筑景观，缺少学生视角的 IP 载体</li>
+            <li>传统创作门槛较高：手绘建模周期长、设备专业门槛高，学生团队难以落地</li>
+            <li>市场审美同质化：配色花哨、元素堆砌，兼具高级质感与校园内核的作品稀缺</li>
+            <li>传播渠道单一：校园文创停留在纪念品层面，未借助新媒体放大声量</li>
+          </ul>
+        </div>
+        <div class="concept-block">
+          <h3><span class="ico" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4.5 13.5H11l-1.5 8.5L18 11h-6.5z"/></svg>
+          </span>「711」的内涵</h3>
+          <div class="num-row">
+            <div class="num-card"><b>7</b><span class="n-tag">七款角色</span><p>整套系列共 7 款角色：文、理、体、音、美、医 6 款学科角色，加 1 款留学生隐藏款 YoYo。</p></div>
+            <div class="num-card"><b>1</b><span class="n-tag">同一个校园</span><p>第一个「1」代表同一个西亚斯校园，兼容中西、海纳百川。</p></div>
+            <div class="num-card"><b>1</b><span class="n-tag">每一个学子</span><p>第二个「1」代表每一位独一无二的西亚斯学子。</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="concept-block">
+          <h3><span class="ico" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v2h-2zm0 4h2v6h-2z"/></svg>
+          </span>工艺与材质</h3>
+          <p>参考潮玩盲盒的成熟表达，统一狮子本体造型与哑光珐琅搪胶质感，以服饰与专业道具差异化呈现角色身份；同一造型基准、不同配色服饰，保证整套系列视觉统一。</p>
+          <div class="craft-chips">
+            <span>哑光搪胶潮玩工艺</span><span>珐琅文创金属质感</span><span>统一狮子本体造型</span><span>服饰道具区分身份</span>
+          </div>
+          <h3 style="margin-top:30px"><span class="ico" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l8 4v10l-8 4-8-4V7z"/></svg>
+          </span>配色体系</h3>
+          <p>全局统一色彩规则：狮子本体色彩完全固定，服饰采用低饱和莫兰迪色系，辅以小面积点缀装饰色，规避文创配色堆砌、审美同质化的问题。</p>
+          <div class="swatches">
+            <div class="sw" style="background:#4E7A6E"><small>莫兰迪青</small></div>
+            <div class="sw" style="background:#C0877F"><small>莫兰迪粉</small></div>
+            <div class="sw" style="background:#687FA3"><small>莫兰迪蓝</small></div>
+            <div class="sw" style="background:#B07B2A"><small>珐琅金</small></div>
+            <div class="sw" style="background:#2C3731"><small>墨绿</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 人机协同工作流 ===== -->
+<section class="section" id="workflow" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">05 / 创作过程</span>
+      <h2 class="section-title">AIGC 人机协同工作流</h2>
+      <p class="section-sub">「AIGC 可控生成 + Photoshop 后期精修」的人机协同模式：4 名学生成员与 1 名指导教师分工协作，完成从概念构思到视觉产出的全流程。</p>
+    </div>
+    <div class="flow">
+      <div class="flow-step">
+        <span class="step-no">STEP 01</span>
+        <h4>前期 · 策划与设定</h4>
+        <p>团队共同完成 IP 概念构思，输出 7 大角色的全套细化设定，依次确定昵称、性别、形象动作与色彩体系，确保角色差异化、辨识度高。</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-no">STEP 02</span>
+        <h4>中期 · AI 可控生成</h4>
+        <p>基于标准化提示词模板生成 7 款狮子盲盒 IP 效果图：严格固定狮子五官与毛发基准，仅迭代服饰与配饰，保障整套系列视觉统一。</p>
+      </div>
+      <div class="flow-step">
+        <span class="step-no">STEP 03</span>
+        <h4>后期 · 精修与延展</h4>
+        <p>以 Photoshop 修正细节、统一色调；同步完成盲盒礼盒、角色卡片、周边衍生物料的版式设计。</p>
+      </div>
+    </div>
+    <div class="tools">
+      <div class="tool"><b>豆包</b><span>梳理思路 · 撰写文案</span></div>
+      <div class="tool"><b>通义千问</b><span>优化创意 · 打磨提示词</span></div>
+      <div class="tool"><b>即梦 AI</b><span>IP 角色与效果图渲染</span></div>
+      <div class="tool"><b>Photoshop</b><span>后期精修 · 统一色调</span></div>
+    </div>
+    <div class="innovation">
+      <span>标准化提示词工程</span>
+      <span>文化符号数字化转译</span>
+      <span>体系化色彩材质规范</span>
+      <span>轻量化创作模式</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 创作团队 ===== -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-kicker">06 / 幕后团队</span>
+      <h2 class="section-title">“711”创作团队</h2>
+      <p class="section-sub">跨学院、跨专业组队：艺术设计学院的视觉表达 × 工学部的技术实现，1 名指导教师全程护航。</p>
+    </div>
+    <div class="team-grid">
+      <div class="member">
+        <div class="m-avatar" aria-hidden="true">祝</div>
+        <h3>祝贝贝</h3>
+        <div class="m-role">项目负责人</div>
+        <p>艺术设计学院<br>2025 级环境设计</p>
+      </div>
+      <div class="member">
+        <div class="m-avatar" aria-hidden="true">叶</div>
+        <h3>叶圣环</h3>
+        <div class="m-role">团队成员</div>
+        <p>艺术设计学院<br>2025 级视觉传达设计</p>
+      </div>
+      <div class="member">
+        <div class="m-avatar" aria-hidden="true">董</div>
+        <h3>董斌</h3>
+        <div class="m-role">团队成员</div>
+        <p>艺术设计学院<br>2025 级数字媒体艺术</p>
+      </div>
+      <div class="member">
+        <div class="m-avatar" aria-hidden="true">李</div>
+        <h3>李嘉俊</h3>
+        <div class="m-role">团队成员</div>
+        <p>工学部<br>2025 级计算机科学与技术</p>
+      </div>
+    </div>
+    <div class="advisor">
+      <span class="a-name">指导教师 · 叶圆圆</span>
+      <span class="a-meta">郑州西亚斯学院</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 海报灯箱 ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="海报大图预览">
+  <img class="lb-img" src="assets/poster-1.jpg" alt="宣传海报《七遇西亚斯》大图" data-cap="宣传海报《七遇西亚斯》 · 系列主视觉" data-n="POSTER 01 / 02">
+  <img class="lb-img" src="assets/poster-2.jpg" alt="展示海报《SIAS 智创校园》大图" data-cap="展示海报《SIAS 智创校园》 · 设计说明" data-n="POSTER 02 / 02">
+  <div class="lb-cap" id="lb-cap"></div>
+  <div class="lb-count" id="lb-count"></div>
+  <button class="lb-btn lb-prev" aria-label="上一张">‹</button>
+  <button class="lb-btn lb-next" aria-label="下一张">›</button>
+  <button class="lb-close" aria-label="关闭预览">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+</div>
+
+<button class="to-top" id="toTop" aria-label="返回顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">711<span>·</span>七遇西亚斯</div>
+        <p style="font-size:13px;margin-top:6px;color:rgba(247,242,233,.6)">西亚斯校园狮子 IP 盲盒文创系列 · AIGC 人机协同创作</p>
+      </div>
+      <div class="footer-meta">
+        <div><b>参赛赛道</b>　2026“智创校园”AI 应用创新大赛 · AIGC 创意传播赛道</div>
+        <div><b>作品形式</b>　短视频 + 海报视觉设计</div>
+        <div><b>创作团队</b>　“711”创作团队 · 郑州西亚斯学院</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 711·七遇西亚斯</span>
+      <span>作品展示页面 · 本页素材均出自团队原创作品</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+
+  /* 海报灯箱：图片路径静态写在 src 属性中，JS 只切换显隐 */
+  var lightbox = document.getElementById('lightbox');
+  var imgs = lightbox.querySelectorAll('.lb-img');
+  var capEl = document.getElementById('lb-cap');
+  var countEl = document.getElementById('lb-count');
+  var current = 0;
+
+  function show(n){
+    current = (n + imgs.length) % imgs.length;
+    imgs.forEach(function(im, i){ im.classList.toggle('active', i === current); });
+    var active = imgs[current];
+    capEl.textContent = active.dataset.cap || '';
+    countEl.textContent = active.dataset.n || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.poster-card').forEach(function(card){
+    card.addEventListener('click', function(){
+      show(parseInt(card.dataset.lb, 10) || 0);
+    });
+  });
+
+  lightbox.querySelector('.lb-close').addEventListener('click', close);
+  lightbox.querySelector('.lb-prev').addEventListener('click', function(e){ e.stopPropagation(); show(current - 1); });
+  lightbox.querySelector('.lb-next').addEventListener('click', function(e){ e.stopPropagation(); show(current + 1); });
+  lightbox.addEventListener('click', function(e){ if(e.target === lightbox) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lightbox.classList.contains('open')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft') show(current - 1);
+    if(e.key === 'ArrowRight') show(current + 1);
+  });
+
+  /* 返回顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
